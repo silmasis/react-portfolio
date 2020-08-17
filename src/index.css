@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  opacity: 0.65;
+  background-image: url("assets/images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
@@ -12,6 +19,28 @@ code {
     monospace;
 }
 
+.navbar {
+  background: #3a445D;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #edf2f6;
+}
+
+.nav-link {
+  color: #edf2f6;
+}
+
+h1 {
+  color: #5e5768;
+}
+
+footer {
+  background-color: #3a445a;
+  color: #edf2f6;
+}
 
 .project-card {
   margin: 20px;
@@ -37,4 +66,14 @@ code {
 .project-card-sub-title {
   font-size: 16px;
   margin: 0px;
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
 }
