@@ -3,18 +3,16 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-
-
 import './App.css';
 
-
+import Footer from './components/Footer';
 
 class App extends React.Component {
   
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Silavong Matthew Sisaleumsak',
+      title: 'Silavong Sisaleumsak',
       headerLinks: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
@@ -40,7 +38,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
           
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-              <Navbar.Brand>Silavong Matthew Sisaleumsak</Navbar.Brand>
+              <Navbar.Brand>Silavong Sisaleumsak</Navbar.Brand>
 
               <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
               <Navbar.Collapse id="navbar-toggle">
@@ -51,6 +49,8 @@ class App extends React.Component {
                 </Nav>
               </Navbar.Collapse>
           </Navbar>
+
+          <Footer />
           
         </Container>
       </Router>
