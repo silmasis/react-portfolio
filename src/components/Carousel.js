@@ -1,8 +1,10 @@
 import React from 'react';
-
 import Card from '../components/Card'
-
 import { Container, Row } from 'react-bootstrap';
+
+import movie from '../assets/images/movie.png';
+import trivia from '../assets/images/trivia.png';
+import food from '../assets/images/headshot.jpg';
 
 class Carousel extends React.Component {
 
@@ -14,7 +16,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: 'Movie Hangman',
                     subTitle: 'Hangman',
-                    //imgSrc: '',
+                    imgSrc: movie,
                     link: 'http://silmasis.github.io/Word_Guess_Game/',
                     selected: false
                 },
@@ -22,7 +24,7 @@ class Carousel extends React.Component {
                     id: 1,
                     title: 'NFL Trivia',
                     subTitle: 'Test your NFL knowledge!',
-                    //imgSrc: '',
+                    imgSrc: trivia,
                     link: 'http://silmasis.github.io/TriviaGame/',
                     selected: false
                 },
@@ -30,7 +32,7 @@ class Carousel extends React.Component {
                     id: 2,
                     title: 'Can I Make It?',
                     subTitle: 'A food app',
-                    //imgSrc: '',
+                    imgSrc: food,
                     link: '',
                     selected: false
                 },
